@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: "github.repository == 'airsonic-advanced/airsonic-advanced' && startsWith(github.ref, 'refs/heads/stable/')"
+    if: "github.repository == 'weigelt/airsonic-advanced-legacy' && startsWith(github.ref, 'refs/heads/stable/')"
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK
