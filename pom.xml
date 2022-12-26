@@ -26,7 +26,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
         <cxf.version>3.4.3</cxf.version>
-        <docker.container.repo>airsonicadvanced/airsonic-advanced</docker.container.repo>
+        <docker.container.repo>weigelt38/airsonic-advanced-legacy</docker.container.repo>
     </properties>
 
     <repositories>
@@ -53,9 +53,9 @@
     </pluginRepositories>
 
     <scm>
-        <connection>scm:git:git://github.com/airsonic-advanced/airsonic-advanced.git</connection>
-        <developerConnection>scm:git:git@github.com:airsonic-advanced/airsonic-advanced.git</developerConnection>
-        <url>https://github.com/airsonic-advanced/airsonic-advanced.git</url>
+        <connection>scm:git:git://github.com/weigelt/airsonic-advanced-legacy.git</connection>
+        <developerConnection>scm:git:git@github.com:weigelt/airsonic-advanced-legacy.git</developerConnection>
+        <url>https://github.com/weigelt/airsonic-advanced-legacy.git</url>
     </scm>
 
     <modules>
