@@ -1,5 +1,4 @@
-FROM exoplatform/jdk:openjdk-14-ubuntu-2004 AS builder
-RUN mkdir "target"
+FROM adoptopenjdk:14-jdk-hotspot AS builder
 WORKDIR target
 
 COPY run.sh /usr/local/bin/run.sh
@@ -14,7 +13,7 @@ RUN mv WEB-INF/lib lib
 RUN mv WEB-INF/classes/META-INF cMETA-INF
 RUN mv WEB-INF/classes/liquibase cliquibase
 
-FROM exoplatform/jdk:openjdk-14-ubuntu-2004
+FROM adoptopenjdk:14-jre-hotspot
 
 LABEL description="Airsonic-Advanced is a free, web-based media streamer, providing ubiquitous access to your music." \
       url="https://github.com/airsonic-advanced/airsonic-advanced"
@@ -25,6 +24,8 @@ WORKDIR $AIRSONIC_DIR
 
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
+    add-apt-repository -y ppa:savoury1/ffmpeg4 && \
+    apt-get update && \
     apt-get install -y ffmpeg \
                        x264 \
                        x265 \
