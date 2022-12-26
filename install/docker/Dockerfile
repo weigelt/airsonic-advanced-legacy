@@ -1,4 +1,5 @@
 FROM exoplatform/jdk:openjdk-14-ubuntu-2004 AS builder
+RUN mkdir "target"
 WORKDIR target
 
 COPY run.sh /usr/local/bin/run.sh
