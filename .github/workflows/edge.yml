@@ -81,13 +81,13 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            airsonicadvanced/airsonic-advanced:latest
-            airsonicadvanced/airsonic-advanced:edge-latest
-            airsonicadvanced/airsonic-advanced:edge-${{ steps.tagcalc.outputs.tag }}
-            airsonicadvanced/airsonic-advanced:gitcommit-${{ github.sha }}
-            airsonicadvanced/airsonic-advanced:gitrun-${{ github.run_id }} 
-            ghcr.io/airsonic-advanced/airsonic-advanced:latest
-            ghcr.io/airsonic-advanced/airsonic-advanced:edge-latest
-            ghcr.io/airsonic-advanced/airsonic-advanced:edge-${{ steps.tagcalc.outputs.tag }}
-            ghcr.io/airsonic-advanced/airsonic-advanced:gitcommit-${{ github.sha }}
-            ghcr.io/airsonic-advanced/airsonic-advanced:gitrun-${{ github.run_id }}
+            weigelt38/airsonic-advanced-legacy:latest
+            weigelt38/airsonic-advanced-legacy:edge-latest
+            weigelt38/airsonic-advanced-legacy:edge-${{ steps.tagcalc.outputs.tag }}
+            weigelt38/airsonic-advanced-legacy:gitcommit-${{ github.sha }}
+            weigelt38/airsonic-advanced-legacy:gitrun-${{ github.run_id }}
+#            ghcr.io/airsonic-advanced/airsonic-advanced:latest
+#            ghcr.io/airsonic-advanced/airsonic-advanced:edge-latest
+#            ghcr.io/airsonic-advanced/airsonic-advanced:edge-${{ steps.tagcalc.outputs.tag }}
+#            ghcr.io/airsonic-advanced/airsonic-advanced:gitcommit-${{ github.sha }}
+#            ghcr.io/airsonic-advanced/airsonic-advanced:gitrun-${{ github.run_id }}
