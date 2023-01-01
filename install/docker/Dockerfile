@@ -24,11 +24,9 @@ WORKDIR $AIRSONIC_DIR
 
 RUN apt-get update && \
     apt-get install -y software-properties-common
-RUN add-apt-repository -y ppa:savoury1/ffmpeg4
 RUN apt-get update && \
-    apt-get install -y ffmpeg
-RUN apt-get update && \
-    apt-get install -y x264 \
+    apt-get install -y ffmpeg \
+                       x264 \
                        x265 \
                        lame \
                        xmp \
