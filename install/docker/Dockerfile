@@ -26,7 +26,8 @@ RUN apt-get update && \
     apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:savoury1/ffmpeg4
 RUN apt-get update && \
-    apt-get install -y ffmpeg
+    apt-get install -y libavdevice58=7:4.4.3-0ubuntu1~20.04.sav1 \
+                       ffmpeg
 RUN apt-get update && \
     apt-get install -y x264 \
                        x265 \
