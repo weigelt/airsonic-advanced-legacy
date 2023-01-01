@@ -79,7 +79,7 @@ jobs:
           file: install/docker/Dockerfile
           context: install/docker
 #          platforms: linux/amd64,linux/arm64,linux/arm/v7
-          platforms: linux/amd64,linux/arm/v7
+          platforms: linux/amd64
           push: true
           tags: |
             weigelt38/airsonic-advanced-legacy:latest
