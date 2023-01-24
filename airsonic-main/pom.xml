@@ -683,7 +683,7 @@
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjtools</artifactId>
-                        <version>1.9.5</version>
+                        <version>1.9.19</version>
                     </dependency>
                 </dependencies>
             </plugin>
