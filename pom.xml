@@ -25,7 +25,7 @@
         <failOnDependencyWarning>true</failOnDependencyWarning>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
-        <cxf.version>3.4.3</cxf.version>
+        <cxf.version>4.0.0</cxf.version>
         <docker.container.repo>weigelt38/airsonic-advanced-legacy</docker.container.repo>
     </properties>
 
